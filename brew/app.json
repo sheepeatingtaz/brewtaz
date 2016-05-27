@@ -1,0 +1,8 @@
+{
+  "name": "Making a Brew: IT Style",
+  "description": "Quarterly Brews need organisation",
+  "image": "heroku/python",
+  "repository": "https://github.com/sheepeatingtaz/brewtaz",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ]
+}
