@@ -3,11 +3,14 @@ from django.db import models
 # Create your models here.
 class Brew(models.Model):
     def __str__(self):
-        desc = "{}: {} {}".format(
-            self.name,
-            self.milk_level(),
-            self.beverage
-        )
+        if self.beverage == "hotwater":
+            desc = "{}: Hot Water".format(self.name)
+        else:
+            desc = "{}: {} {}".format(
+                self.name,
+                self.milk_level(),
+                self.beverage
+            )
 
         if self.sugars > 0:
             if self.sugars == 1:
