@@ -1,0 +1,50 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    {% include "head.html" %}
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
+    </script>
+</head>
+<body>
+<!----start-header----->
+<div class="wrap">
+    <div class="header">
+        <div class="header_top">
+        {% include "menu.html" %}
+    </div>
+    </div>
+</div>
+<!----End-header----->
+<!------ Slider ------------>
+<div class="slider">
+    <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+            <img src="{% static "images/slider-2.jpg" %}" data-thumb="{% static "images/slider-2.jpg" %}" alt=""/>
+            <img src="{% static "images/slider-3.jpg" %}" data-thumb="{% static "images/slider-3.jpg" %}" alt=""/>
+            <img src="{% static "images/slider-4.jpg" %}" data-thumb="{% static "images/slider-4.jpg" %}" alt=""/>
+            <img src="{% static "images/slider-1.jpg" %}" data-thumb="{% static "images/slider-1.jpg" %}" alt=""/>
+        </div>
+    </div>
+</div>
+<!------End Slider ------------>
+<!---start-content---->
+
+<!---End-content---->
+<!---start-footer---->
+<div class="copy-right">
+    <p>Design by <a href="http://w3layouts.com/"> W3layouts</a></p>
+</div>
+<!---End-footer---->
+</body>
+</html>
+

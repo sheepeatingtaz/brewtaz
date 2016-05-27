@@ -1,0 +1,44 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+{% load staticfiles %}
+<html>
+<head>
+    {% include "head.html" %}
+</head>
+<body>
+<!----start-header----->
+<div class="header_img">
+    <img src="{% static "images/header_img.jpg" %}" alt=""/>
+    <div class="wrap">
+        <div class="header">
+            {% include "menu.html" %}
+        </div>
+    </div>
+</div>
+<!----End-header----->
+<!---start-content---->
+<div class="wrap">
+    <div class="content">
+        <div class="section group">
+            <div class="cont span_2_of_3 services_desc">
+                {% block actions %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!---End-content---->
+<!---start-footer---->
+<div class="copy-right">
+    <p>Design by <a href="http://w3layouts.com/"> W3layouts</a></p>
+</div>
+<!---End-footer---->
+</body>
+</html>
+
