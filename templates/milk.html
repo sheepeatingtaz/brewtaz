@@ -1,11 +1,19 @@
 {% extends 'services.html' %}
 {% load staticfiles %}
-
 {% block actions %}
-    <h2>Milk?</h2>
+    <h2>How Milky?</h2>
     <div class="image group">
-    {% for i in "xxxx" %}
-        <a href="{% url "cuppa:who" beverage sugars forloop.counter0 %}">{{ forloop.counter0 }}</a>
-    {% endfor %}
-    </div>
+        <div class="row">
+            {% for t in milkscale %}
+                <div class="col-lg-3 panel panel-default">
+                    <div class="panel-body text-center">
+                        <a href="{% url "cuppa:who" beverage sugars t.id %}"><img
+                                class="img-responsive img-rounded"
+                                src="{% static "images/tea/" %}{{ t.name|slugify }}.png" }/></a>
+                        <p>{{ t.name }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    <div>
 {% endblock %}

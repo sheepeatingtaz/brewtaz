@@ -1,11 +1,17 @@
 {% extends 'services.html' %}
 {% load staticfiles %}
-
 {% block actions %}
     <h2>How Many Sugars?</h2>
     <div class="image group">
-    {% for i in "xxxx" %}
-        <a href="{% url "cuppa:milk" beverage forloop.counter0 %}">{{ forloop.counter0 }}</a>
-    {% endfor %}
-    </div>
+        <div class="row">
+            {% for i in "xxxx" %}
+                <div class="col-lg-3 panel panel-default">
+                    <div class="panel-body">
+                        <a href="{% url "cuppa:milk" beverage forloop.counter0 %}"><img
+                                class="img-responsive img-rounded"
+                                src="{% static "images/cubes/sugar-" %}{{ forloop.counter0 }}.jpg" }/></a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
 {% endblock %}

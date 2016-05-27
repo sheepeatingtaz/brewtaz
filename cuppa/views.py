@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse_lazy
 from django.views.generic import TemplateView, FormView
 
 from cuppa.forms import NameForm, NotesForm
-from cuppa.models import Brew
+from cuppa.models import Brew, Tea
 
 
 class Home(TemplateView):
@@ -26,6 +26,7 @@ class Milk(Sugars):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['sugars'] = self.kwargs.get('sugars')
+        context['milkscale'] = Tea.objects.all()
         return context
 
 
