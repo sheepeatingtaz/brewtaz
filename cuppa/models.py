@@ -22,6 +22,7 @@ class Brew(models.Model):
     sugars = models.IntegerField(default=0)
     milk = models.IntegerField(default=0)
     notes = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def milk_level(self):
         if self.milk == 0:
