@@ -4,10 +4,30 @@
 {% block actions %}
     <h2>Thanks for your order!</h2>
     <div class="image group">
+    <div class="well">
     <h4>Summary</h4>
-    <p>{{ brew }}</p>
+    <div>{{ brew.name }}: {{ brew.beverage }}</div>
+    <div>
+        <div class="col-lg-3 panel panel-default">
+            <div class="panel-body text-center">
+                <img
+                        class="img-responsive img-rounded"
+                        src="{% static "images/tea/" %}{{ brew.milkiness.name|slugify }}.png" }/>
+                <p>{{ brew.milkiness.name }}</p>
+            </div>
+        </div>
+        <div class="col-lg-3 panel panel-default">
+            <div class="panel-body">
+                <img
+                        class="img-responsive img-rounded"
+                        src="{% static "images/cubes/sugar-" %}{{ brew.sugars }}.jpg" }/>
+            </div>
+        </div>
+    </div>
     {% if brew.notes %}
-    <p>Notes: {{ brew.notes }}</p>
+        <div class="clear"/>
+    <div>Notes: {{ brew.notes }}</div>
     {% endif %}
     </div>
+</div>
 {% endblock %}

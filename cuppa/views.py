@@ -64,7 +64,7 @@ class Notes(Who):
             name=self.kwargs.get('name'),
             beverage=self.kwargs.get('beverage'),
             sugars=self.kwargs.get('sugars'),
-            milk=self.kwargs.get('milk'),
+            milkiness_id=self.kwargs.get('milk'),
             notes=form.cleaned_data['notes']
         )
         brew.save()

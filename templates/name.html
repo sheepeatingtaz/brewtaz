@@ -1,13 +1,18 @@
 {% extends 'services.html' %}
 {% load staticfiles %}
+{% load bootstrap3 %}
 
 {% block actions %}
     <h2>Who Are You?</h2>
     <div class="image group">
     <form action="{% url "cuppa:who" beverage sugars milk %}" method="post">
         {% csrf_token %}
-        {{ form }}
-        <input type="submit" value="Next" />
+        {% bootstrap_form form %}
+        {% buttons %}
+        <button type="submit" class="btn btn-primary">
+            {% bootstrap_icon "forward" %} Next
+        </button>
+        {% endbuttons %}
     </form>
     </div>
 {% endblock %}
