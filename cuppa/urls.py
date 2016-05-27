@@ -18,8 +18,8 @@ from django.conf.urls import url
 from cuppa.views import Sugars, Milk, Who, Notes
 
 urlpatterns = [
-    url(r'^(?P<beverage>coffee|tea)/$', Sugars.as_view(), name="sugar"),
-    url(r'^(?P<beverage>coffee|tea)/(?P<sugars>\d+)/$', Milk.as_view(), name="milk"),
-    url(r'^(?P<beverage>coffee|tea)/(?P<sugars>\d+)/(?P<milk>\d+)/$', Who.as_view(), name="who"),
-    url(r'^(?P<beverage>coffee|tea)/(?P<sugars>\d+)/(?P<milk>\d+)/(?P<name>\w+)$', Notes.as_view(), name="notes"),
+    url(r'^(?P<beverage>coffee|tea|hotwater)/$', Sugars.as_view(), name="sugar"),
+    url(r'^(?P<beverage>coffee|tea|hotwater)/(?P<sugars>\d+)/$', Milk.as_view(), name="milk"),
+    url(r'^(?P<beverage>coffee|tea|hotwater)/(?P<sugars>\d+)/(?P<milk>\d+)/$', Who.as_view(), name="who"),
+    url(r'^(?P<beverage>coffee|tea|hotwater)/(?P<sugars>\d+)/(?P<milk>\d+)/(?P<name>\w+( +\w+)*)$', Notes.as_view(), name="notes"),
 ]
