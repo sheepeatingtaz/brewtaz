@@ -1,0 +1,121 @@
+[
+  {
+    "model": "cuppa.tea",
+    "pk": 2,
+    "fields": {
+      "name": "Brew ha ha"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 3,
+    "fields": {
+      "name": "Brown zero"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 4,
+    "fields": {
+      "name": "Burnt toffee"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 5,
+    "fields": {
+      "name": "Colonel mustard"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 6,
+    "fields": {
+      "name": "Cuppa cabana"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 7,
+    "fields": {
+      "name": "Devon tan"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 8,
+    "fields": {
+      "name": "Earl gravy"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 9,
+    "fields": {
+      "name": "Iron brew"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 10,
+    "fields": {
+      "name": "Midnight savannah"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 11,
+    "fields": {
+      "name": "Mountain chimp"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 12,
+    "fields": {
+      "name": "Mr tea"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 13,
+    "fields": {
+      "name": "Nigerian sunset"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 14,
+    "fields": {
+      "name": "No milk"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 15,
+    "fields": {
+      "name": "Peanut safari"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 16,
+    "fields": {
+      "name": "Skimmed alive"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 17,
+    "fields": {
+      "name": "Stripped teas"
+    }
+  },
+  {
+    "model": "cuppa.tea",
+    "pk": 18,
+    "fields": {
+      "name": "Tio de janeiro"
+    }
+  }
+]
